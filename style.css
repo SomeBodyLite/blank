@@ -62,6 +62,9 @@ span {
 .page-midle-text {
   text-align: center;
 }
+.page-end-text > :first-child {
+  margin-right: 60px;
+}
 .page-end-text {
   text-align: right;
 }
@@ -83,8 +86,10 @@ span {
   }
   .page-start-text > :nth-child(6),
   .page-start-text > :nth-child(4),
-  .page-start-text > :first-child {
+  .page-start-text > :first-child,
+  .page-end-text > :first-child {
     margin-left: 0px;
+    margin-right: 0px;
   }
   .page {
     height: 95vh;
