@@ -45,7 +45,8 @@
       .page-start-text {
         text-align: left;
       }
-      .midle {
+      .page-start-text > :nth-child(6),
+      .page-start-text > :nth-child(4) {
         margin-left: 90px;
       }
       .page-start-text > :first-child {
@@ -60,6 +61,12 @@
       .page-footer-text {
         text-align: center;
       }
+      .page {
+        height: 100vh;
+      }
+      .page * {
+        margin: auto 0;
+      }
 
       @media screen and (max-width: 602px) {
         .page-start-text,
@@ -67,19 +74,17 @@
         .page-end-text {
           text-align: center;
         }
-        .midle,
+        .page-start-text > :nth-child(6),
+        .page-start-text > :nth-child(4),
         .page-start-text > :first-child {
           margin-left: 0px;
         }
         .page {
-          height: 100vh;
+          height: 95vh;
         }
         a {
           margin-top: 10px 0;
           padding: 10px 0;
-        }
-        .page * {
-          margin: auto;
         }
         .page-midle-text {
           font-size: 1.3rem;
@@ -87,12 +92,17 @@
       }
       @media screen and (min-width: 992px) {
         html {
-          font-size: 14px;
+          font-size: 16px;
         }
       }
       @media screen and (min-width: 1360px) {
         html {
           font-size: 19px;
+        }
+      }
+      @media screen and (min-width: 1600px) {
+        html {
+          font-size: 24px;
         }
       }
     </style>
@@ -103,9 +113,9 @@
           <br />
           13 лет торгую на Московской бирже
           <br />
-          <span class="midle"> - Не обучаю </span>
+          <span> - Не обучаю </span>
           <br />
-          <span class="midle"> - Не продаю </span>
+          <span> - Не продаю </span>
           <br />
           Лучший частный инвестор 2018
           <br />
