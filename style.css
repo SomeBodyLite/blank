@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "VelaSans";
+  src: local("VelaSans Bold"), local("VelaSans-Bold"),
+    url("./fonts/VelaSans-Bold.woff2") format("woff2"),
+    url("./fonts/VelaSans-Bold.woff") format("woff"),
+    url("./fonts/VelaSans-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "VelaSans";
+  src: local("VelaSans Regular"), local("VelaSans-Regular"),
+    url("./fonts/VelaSans-Regular.woff2") format("woff2"),
+    url("./fonts/VelaSans-Regular.woff") format("woff"),
+    url("./fonts/VelaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #000000;
+  font-family: "VelaSans", sans-serif;
+  color: #fcf8f7;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #fcf8f7;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: #dfd8d5;
+}
+b,
+strong {
+  font-weight: 600;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+span {
+  font-size: 0.9rem;
+}
+.page-start {
+  justify-content: flex-end;
+}
+.page-start-text {
+  text-align: left;
+}
+.page-start-text > :nth-child(6),
+.page-start-text > :nth-child(4) {
+  margin-left: 90px;
+}
+.page-start-text > :first-child {
+  margin-left: 100px;
+}
+.page-midle-text {
+  text-align: center;
+}
+.page-end-text {
+  text-align: right;
+}
+.page-footer-text {
+  text-align: center;
+}
+.page {
+  height: 100vh;
+}
+.page * {
+  margin: auto 0;
+}
+
+@media screen and (max-width: 602px) {
+  .page-start-text,
+  .page-midle-text,
+  .page-end-text {
+    text-align: center;
+  }
+  .page-start-text > :nth-child(6),
+  .page-start-text > :nth-child(4),
+  .page-start-text > :first-child {
+    margin-left: 0px;
+  }
+  .page {
+    height: 95vh;
+  }
+  a {
+    margin-top: 10px 0;
+    padding: 10px 0;
+  }
+  .page-midle-text {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  html {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 24px;
+  }
+}
